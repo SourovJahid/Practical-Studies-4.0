@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='production_order' inline='true' name='federated.1dfoyz5036zxir1acb0gn1n2c7ig' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='production_order' name='textscan.0x3vz9n0olau1z11d8bh80aiptnj'>
+            <connection class='textscan' directory='C:/Users/REZVI/Desktop/Practical Industry' filename='production_order.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0x3vz9n0olau1z11d8bh80aiptnj' name='production_order.csv' table='[production_order#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='request_id' ordinal='0' />
+            <column datatype='integer' name='partner_id' ordinal='1' />
+            <column datatype='integer' name='oatmeal' ordinal='2' />
+            <column datatype='integer' name='cornflakes' ordinal='3' />
+            <column datatype='integer' name='coconut' ordinal='4' />
+            <column datatype='integer' name='sugar' ordinal='5' />
+            <column datatype='date' name='delivery_date' ordinal='6' />
+            <column datatype='integer' name='customer_order_id' ordinal='7' />
+            <column datatype='integer' name='duration_sec' ordinal='8' />
+            <column datatype='string' name='status' ordinal='9' />
+            <column datatype='string' name='start_time' ordinal='10' />
+            <column datatype='integer' name='porder_id' ordinal='11' />
+            <column datatype='integer' name='status number' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0x3vz9n0olau1z11d8bh80aiptnj' name='production_order.csv' table='[production_order#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='request_id' ordinal='0' />
+            <column datatype='integer' name='partner_id' ordinal='1' />
+            <column datatype='integer' name='oatmeal' ordinal='2' />
+            <column datatype='integer' name='cornflakes' ordinal='3' />
+            <column datatype='integer' name='coconut' ordinal='4' />
+            <column datatype='integer' name='sugar' ordinal='5' />
+            <column datatype='date' name='delivery_date' ordinal='6' />
+            <column datatype='integer' name='customer_order_id' ordinal='7' />
+            <column datatype='integer' name='duration_sec' ordinal='8' />
+            <column datatype='string' name='status' ordinal='9' />
+            <column datatype='string' name='start_time' ordinal='10' />
+            <column datatype='integer' name='porder_id' ordinal='11' />
+            <column datatype='integer' name='status number' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>request_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[request_id]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>request_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>partner_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[partner_id]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>partner_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oatmeal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[oatmeal]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>oatmeal</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cornflakes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cornflakes]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>cornflakes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coconut</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[coconut]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>coconut</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sugar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sugar]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>sugar</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[delivery_date]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>delivery_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_order_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_order_id]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>customer_order_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_sec</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration_sec]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>duration_sec</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_time]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>start_time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porder_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[porder_id]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>porder_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[status number]</local-name>
+            <parent-name>[production_order.csv]</parent-name>
+            <remote-alias>status number</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='production_order.csv' datatype='table' name='[__tableau_internal_object_id__].[production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D]' role='measure' type='quantitative' />
+      <column caption='Coconut' datatype='integer' hidden='true' name='[coconut]' role='measure' type='quantitative' />
+      <column caption='Cornflakes' datatype='integer' hidden='true' name='[cornflakes]' role='measure' type='quantitative' />
+      <column caption='Customer Order Id' datatype='integer' name='[customer_order_id]' role='dimension' type='ordinal' />
+      <column caption='Delivery Date' datatype='date' name='[delivery_date]' role='dimension' type='ordinal' />
+      <column caption='Duration Sec' datatype='integer' name='[duration_sec]' role='measure' type='quantitative' />
+      <column caption='Oatmeal' datatype='integer' hidden='true' name='[oatmeal]' role='measure' type='quantitative' />
+      <column caption='Partner Id' datatype='integer' name='[partner_id]' role='dimension' type='ordinal' />
+      <column caption='Porder Id' datatype='integer' name='[porder_id]' role='dimension' type='ordinal' />
+      <column caption='Request Id' datatype='integer' name='[request_id]' role='dimension' type='ordinal' />
+      <column caption='2nd September, 2020 to 30th September, 2020' datatype='date' datatype-customized='true' name='[start_time - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[start_time]'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;MM/dd/yyyy&quot;, TRIM( SPLIT( [start_time], &quot; &quot;, 1 ) ) )) ' />
+      </column>
+      <column caption='Start Time' datatype='string' name='[start_time]' role='dimension' type='nominal' />
+      <column caption='Production Quantity' datatype='integer' name='[status number]' role='measure' type='quantitative' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Sugar' datatype='integer' hidden='true' name='[sugar]' role='measure' type='quantitative' />
+      <column-instance column='[Set 2]' derivation='InOut' name='[io:Set 2:nk]' pivot='key' type='nominal' />
+      <column-instance column='[WEEKDAY(Start Date) Set]' derivation='InOut' name='[io:WEEKDAY(Start Date) Set:nk]' pivot='key' type='nominal' />
+      <column-instance column='[start_time - Split 1]' derivation='Weekday' name='[wd:start_time - Split 1:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[start_time - Split 1]' derivation='Week' name='[wk:start_time - Split 1:ok]' pivot='key' type='ordinal' />
+      <group caption='Maintenance Day' name='[Set 1]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='member' level='[io:WEEKDAY(Start Date) Set:nk]' member='false' />
+          <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='5' />
+        </groupfilter>
+      </group>
+      <group caption='working day' name='[Set 2]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='reorder-dimensionality'>
+          <groupfilter function='union'>
+            <groupfilter function='crossjoin'>
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='2' />
+                <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='3' />
+              </groupfilter>
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='37' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='38' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='39' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='40' />
+              </groupfilter>
+            </groupfilter>
+            <groupfilter function='crossjoin'>
+              <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='4' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='36' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='37' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='38' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='39' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='40' />
+              </groupfilter>
+            </groupfilter>
+            <groupfilter function='crossjoin'>
+              <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='6' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='36' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='37' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='38' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='39' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+          <order>
+            <hierarchy name='[wk:start_time - Split 1:ok]' />
+            <hierarchy name='[wd:start_time - Split 1:ok]' />
+          </order>
+        </groupfilter>
+      </group>
+      <group caption='Maintenance Day 2' name='[Set 3]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='reorder-dimensionality'>
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[io:Set 2:nk]' member='false' />
+            <groupfilter function='crossjoin'>
+              <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='5' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='36' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='37' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='38' />
+                <groupfilter function='member' level='[wk:start_time - Split 1:ok]' member='39' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+          <order>
+            <hierarchy name='[io:Set 2:nk]' />
+            <hierarchy name='[wk:start_time - Split 1:ok]' />
+            <hierarchy name='[wd:start_time - Split 1:ok]' />
+          </order>
+        </groupfilter>
+      </group>
+      <group caption='WEEKDAY(Start Date) Set' name='[WEEKDAY(Start Date) Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter from='2' function='range' level='[wd:start_time - Split 1:ok]' to='4' />
+          <groupfilter function='member' level='[wd:start_time - Split 1:ok]' member='6' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='production_order.csv' id='production_order.csv_F09621DE76FC4731BDFCBDE7D508A89D'>
+            <properties context=''>
+              <relation connection='textscan.0x3vz9n0olau1z11d8bh80aiptnj' name='production_order.csv' table='[production_order#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='request_id' ordinal='0' />
+                  <column datatype='integer' name='partner_id' ordinal='1' />
+                  <column datatype='integer' name='oatmeal' ordinal='2' />
+                  <column datatype='integer' name='cornflakes' ordinal='3' />
+                  <column datatype='integer' name='coconut' ordinal='4' />
+                  <column datatype='integer' name='sugar' ordinal='5' />
+                  <column datatype='date' name='delivery_date' ordinal='6' />
+                  <column datatype='integer' name='customer_order_id' ordinal='7' />
+                  <column datatype='integer' name='duration_sec' ordinal='8' />
+                  <column datatype='string' name='status' ordinal='9' />
+                  <column datatype='string' name='start_time' ordinal='10' />
+                  <column datatype='integer' name='porder_id' ordinal='11' />
+                  <column datatype='integer' name='status number' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Visualization Of Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='production_order' name='federated.1dfoyz5036zxir1acb0gn1n2c7ig' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dfoyz5036zxir1acb0gn1n2c7ig'>
+            <column-instance column='[Set 2]' derivation='InOut' name='[io:Set 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Set 3]' derivation='InOut' name='[io:Set 3:nk]' pivot='key' type='nominal' />
+            <column caption='2nd September, 2020 to 30th September, 2020' datatype='date' datatype-customized='true' name='[start_time - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[start_time]'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;MM/dd/yyyy&quot;, TRIM( SPLIT( [start_time], &quot; &quot;, 1 ) ) )) ' />
+            </column>
+            <column caption='Start Time' datatype='string' name='[start_time]' role='dimension' type='nominal' />
+            <column caption='Production Quantity' datatype='integer' name='[status number]' role='measure' type='quantitative' />
+            <column-instance column='[status number]' derivation='Sum' name='[sum:status number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_time - Split 1]' derivation='Weekday' name='[wd:start_time - Split 1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time - Split 1]' derivation='Week' name='[wk:start_time - Split 1:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[sum:status number:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]' value='536' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 2:nk]' />
+              <color column='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 3:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]</rows>
+        <cols>([federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wk:start_time - Split 1:ok] * [federated.1dfoyz5036zxir1acb0gn1n2c7ig].[sum:status number:qk])</cols>
+      </table>
+      <simple-id uuid='{B0ABB0AB-8378-4CF3-8BC2-49280A833EDA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Visualization Of Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='production_order' name='federated.1dfoyz5036zxir1acb0gn1n2c7ig' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dfoyz5036zxir1acb0gn1n2c7ig'>
+            <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WEEKDAY(Start Date) Set]' derivation='InOut' name='[io:WEEKDAY(Start Date) Set:nk]' pivot='key' type='nominal' />
+            <column caption='2nd September, 2020 to 30th September, 2020' datatype='date' datatype-customized='true' name='[start_time - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[start_time]'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;MM/dd/yyyy&quot;, TRIM( SPLIT( [start_time], &quot; &quot;, 1 ) ) )) ' />
+            </column>
+            <column caption='Start Time' datatype='string' name='[start_time]' role='dimension' type='nominal' />
+            <column caption='Production Quantity' datatype='integer' name='[status number]' role='measure' type='quantitative' />
+            <column-instance column='[status number]' derivation='Sum' name='[sum:status number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_time - Split 1]' derivation='Weekday' name='[wd:start_time - Split 1:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[sum:status number:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]' value='150' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:WEEKDAY(Start Date) Set:nk]' />
+              <color column='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 1:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[sum:status number:qk]</rows>
+        <cols>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]</cols>
+      </table>
+      <simple-id uuid='{8F2D329E-912F-4C65-A672-4CF8194870FB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 2:nk]&#10;[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 3:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17k7rmf0vw0f461b1uir81nnrrxz].[none:Status (copy)_1205275881886146560:nk]</field>
+            <field>[federated.17k7rmf0vw0f461b1uir81nnrrxz].[wd:start_time - Split 1:ok]</field>
+            <field>[federated.17k7rmf0vw0f461b1uir81nnrrxz].[yr:start_time - Split 1:ok]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 2:nk]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 3:nk]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[yr:start_time - Split 1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{60B0CF0B-2CAD-459E-9F54-8CA12D29FFEB}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:WEEKDAY(Start Date) Set:nk]&#10;[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:Set 1:nk]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[io:WEEKDAY(Start Date) Set:nk]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[wd:start_time - Split 1:ok]</field>
+            <field>[federated.1dfoyz5036zxir1acb0gn1n2c7ig].[yr:start_time - Split 1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B3DE094A-50EB-4C22-876F-39E3D4DE9D00}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACUElEQVR4nO3XIZaEQBAFQXrfoLj/LTEgsL03QDYiI2yZb1LUmHPODaL+vh4AXxIAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg7fd2
+      vK5re55n1RZY7jWAMcY2xli1BZYbc8759Qj4ih+ANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmAtN/b8TzP7b7v
+      VVtgudcAjuPY9n1ftQWWG3PO+fUI+IofgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      +wf7jBj/cGZGIQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
